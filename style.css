@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -60,7 +61,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .main_nav div ul li{
     display: inline;
-    padding: 11px 15px;
+    padding: 9px 15px;
     margin: 0 25px;
 }
 .main_nav div ul li:hover{
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5, h6{
 .main_nav div p{
     margin: 0;
     color: black;
-    padding: 11px 15px;
+    padding: 9px 15px;
     border-radius: 50px;
     float: right;
     width: fit-content;
@@ -102,4 +103,108 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     height: 3px;
     background-color: rgb(51, 52, 52);
+}
+header{
+    margin: 80px 0;
+}
+header img{
+    width: 9%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+header h1{
+    background-color: rgb(112, 244, 104);
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-family: 'Dela Gothic One', cursive;
+    padding: 0 5px;
+}
+.payment h2{
+    text-align: center;
+    color: rgb(112, 244, 104);
+}
+.button button{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.button img{
+    margin: 0 auto;
+    display: block;
+    width: 25px;
+    margin-top: 25px;
+    padding: 20.4375px 15px;
+}
+.button img:hover{
+    background-color: rgb(112, 244, 104);
+    border-radius: 50%;
+}
+#dropdown_content{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+form{
+    margin: 25px 0;
+}
+form input{
+    margin: 10px 0;
+    width: 25%;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid rgb(120, 120, 115);
+    background-color: inherit;
+    padding: 0 20px;
+    color: white;
+}
+form input:focus{
+    outline: none;
+    border: 2px solid rgb(112, 244, 104);
+}
+.submit{
+    width: 10%;
+}
+.submit:hover{
+    background-color: rgb(112, 244, 104);
+    border: none;
+}
+#animation{
+    margin: 120px 0;
+    display: none;
+    justify-content: center;
+}
+#animation div{
+    position: relative;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(120, 120, 115);
+    border-radius: 50%;
+}
+#animation div:nth-child(1){
+    animation: popping 1.5s;
+    animation-iteration-count: 2;
+}
+#animation div:nth-child(2){
+    animation: popping 1.5s;
+    animation-delay: 0.3s;
+    animation-iteration-count: 2;
+}
+#animation div:nth-child(3){
+    animation: popping 1.5s infinite;
+    animation-delay: 0.6s;
+    animation-iteration-count: 2;
+}
+@keyframes popping{
+    0% {top: 0px;}
+    50% {top: -50px;}
+    100% {top: 0px;}
+}
+#content{
+    display: none;
 }

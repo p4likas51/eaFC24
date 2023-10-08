@@ -24,9 +24,9 @@
             </div>
             <div class="nav_second">
                 <ul>
-                    <li>Gameplay <img src="img/down_arrow.png" alt=""></li>
+                    <li>Division Rivals <img src="img/down_arrow.png" alt=""></li>
+                    <li>Squad Battle <img src="img/down_arrow.png" alt=""></li>
                     <li>FUT Cards <img src="img/down_arrow.png" alt=""></li>
-                    <li>Reviews <img src="img/down_arrow.png" alt=""></li>
                     <li>Community <img src="img/down_arrow.png" alt=""></li>
                 </ul>
             </div>
@@ -36,5 +36,33 @@
         </div>
         <div class="nav_line"></div>
     </nav>
+    <header>
+        <img src="img/logo.png" alt="">
+        <h1>FC 24 ULTIMATE TEAM</h1>
+    </header>
+    <div class="payment" id="payment">
+        <h2>To continue pay 5.99$</h2>
+        <div class="button">
+            <button id="dropdown_button"><img id="white_arrow" src="img/down_arrow.png" alt=""></button>
+        </div>
+        <div id="dropdown_content">
+            <form name="payment" onsubmit="return validateForm()">
+                <input type="text" id="name" name="name" placeholder="Name"><br>
+                <input type="text" id="number" name="number" placeholder="Card Number"><br>
+                <input type="text" id="cv" name="cv" placeholder="CV Code" maxlength="3"><br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div id="animation">
+        <div id="animation_first"></div>
+        <div id="animation_second"></div>
+        <div id="animation_last"></div>
+    </div>
+    <div id="content">
+        <img src="img/bappe_card.png" alt="">
+    </div>
+    <script src="content.js"></script>
+    <script src="payment.js"></script>
 </body>
 </html>
