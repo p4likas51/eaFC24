@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(21, 22, 22);
+    
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -113,7 +118,7 @@ header img{
     margin: 0 auto;
     margin-bottom: 40px;
 }
-header h1{
+.title{
     background-color: rgb(112, 244, 104);
     width: fit-content;
     margin: 0 auto;
@@ -139,6 +144,7 @@ header h1{
     width: 25px;
     margin-top: 25px;
     padding: 20.4375px 15px;
+    transition: transform .1s linear .2s;
 }
 .button img:hover{
     background-color: rgb(112, 244, 104);
@@ -166,10 +172,35 @@ form input:focus{
     outline: none;
     border: 2px solid rgb(112, 244, 104);
 }
-.submit{
+#name{
+    opacity: 0;
+    animation: float .5s ease-out;
+    animation-fill-mode: forwards;
+}
+#number{
+    opacity: 0;
+    animation: float .5s ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+#cv{
+    opacity: 0;
+    animation: float .5s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#submit{
+    opacity: 0;
+    animation: float .5s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
     width: 10%;
 }
-.submit:hover{
+@keyframes float {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#submit:hover{
     background-color: rgb(112, 244, 104);
     border: none;
 }
@@ -177,6 +208,8 @@ form input:focus{
     margin: 120px 0;
     display: none;
     justify-content: center;
+    position: relative;
+    top: -200px;
 }
 #animation div{
     position: relative;
@@ -207,4 +240,96 @@ form input:focus{
 }
 #content{
     display: none;
+}
+#evolution{
+    background-color: rgb(112, 244, 104);
+    display: flex;
+    color: black;
+    padding: 50px 0px;
+    margin-bottom: 150px;
+}
+#evolution h1{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2.6rem;
+    text-align: center;
+}
+#evolution p{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0 50px;
+}
+#evolution div{
+    width: 50%;
+}
+.evolution_img{
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+    top: 60px;
+}
+.evolution_img img{
+    position:absolute;
+    left:350px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;    
+}
+.evolution_img img.bottom{
+    top: 16px;
+}
+.evolution_img img.top:hover{
+    opacity:0;
+}
+.players{
+    margin-top: 150px;
+}
+.players>div{
+    display: flex;
+    justify-content: space-between;
+}
+.players div div:first-child{
+    width: 40%;
+}
+.players div div:nth-child(2){
+    width: 60%;    
+}
+.gameplay{
+    width: 100%;
+}
+.card{
+    padding-top: 50px;
+    width: 22%;
+    display: block;
+    margin: 0 auto;
+}
+.players div div:nth-child(2) div{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    margin-top: 50px;
+}
+.players div div:nth-child(2) div h2{
+    font-size: 2rem;
+}
+.players div div:nth-child(2) div span{
+    font-size: 1.8rem;
+}
+.players div div:nth-child(2) div img{
+    width: 80px;
+    margin-top: 30px;
+}
+.players div div:nth-child(2) div span{
+    position: relative;
+    top: -35px;
+    padding-left: 10px;
+}
+.players div div:nth-child(2) div div{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(51, 52, 52);
+
 }

@@ -24,7 +24,7 @@
             </div>
             <div class="nav_second">
                 <ul>
-                    <li>Division Rivals <img src="img/down_arrow.png" alt=""></li>
+                    <li><a href="#evolution">Evolution</a></li>
                     <li>Squad Battle <img src="img/down_arrow.png" alt=""></li>
                     <li>FUT Cards <img src="img/down_arrow.png" alt=""></li>
                     <li>Community <img src="img/down_arrow.png" alt=""></li>
@@ -36,9 +36,9 @@
         </div>
         <div class="nav_line"></div>
     </nav>
-    <header>
+    <header id="header">
         <img src="img/logo.png" alt="">
-        <h1>FC 24 ULTIMATE TEAM</h1>
+        <h1 class="title">FC 24 ULTIMATE TEAM</h1>
     </header>
     <div class="payment" id="payment">
         <h2>To continue pay 5.99$</h2>
@@ -50,17 +50,101 @@
                 <input type="text" id="name" name="name" placeholder="Name"><br>
                 <input type="text" id="number" name="number" placeholder="Card Number"><br>
                 <input type="text" id="cv" name="cv" placeholder="CV Code" maxlength="3"><br>
-                <input class="submit" type="submit" value="Submit">
+                <input class="submit" id="submit" type="submit" value="Submit">
             </form>
         </div>
     </div>
     <div id="animation">
-        <div id="animation_first"></div>
-        <div id="animation_second"></div>
-        <div id="animation_last"></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
     <div id="content">
-        <img src="img/bappe_card.png" alt="">
+        <div id="evolution">
+            <div>
+                <h1>DEVELOP YOUR OWN CLUB LEGENDS</h1>
+                <p>
+                    For the first time ever, you can improve players in your club via Ultimate Team™ Evolutions—a new way to build your squad around the players you love. Choose players that fit the Evolutions criteria and complete a set of objectives to improve their individual skills, PlayStyles, and overall ratings to keep them competitive throughout the year. You’ll even be able to level-up how their Player Items look with new designs and animated backgrounds so you can flex on your opponent with your homegrown Evolutions players and all the milestones they’ve reached for your Club.
+                </p>
+            </div>
+            <div class="evolution_img">
+                <img class="bottom" src="img/ansu_fati_evolution.png" alt="">
+                <img class="top" src="img/ansu_fati.png" alt="">
+            </div>
+        </div>
+        <h1 class="title">HIGHEST RATED CARDS</h1>
+        <div class="players">
+            <div>
+                <div>
+                    <img class="gameplay" src="img/mbappe_gameplay_cropped.jpg" alt="">
+                </div>
+                <div>
+                    <img class="card" src="img/bappe_card.png" alt="">
+                    <div>
+                        <h2>Play Styles+</h2>
+                        <img src="img/quick_step.png" alt="">
+                        <span>QUICK STEP</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="gameplay" src="img/haaland_wallpaper_cropped.jpg" alt="">
+                </div>
+                <div>
+                    <img class="card" src="img/haaland_card.png" alt="">
+                    <div>
+                        <h2>Play Styles+</h2>
+                        <img src="img/acrobatic.png" alt="">
+                        <span>ACROBATIC</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="gameplay" src="img/de_bruyne_gameplay_cropped.jpg" alt="">
+                </div>
+                <div>
+                    <img class="card" src="img/de_bruyne_card.png" alt="">
+                    <div>
+                        <h2>Play Styles+</h2>
+                        <img src="img/incisive_pass.png" alt="">
+                        <span>INCISIVE PASS</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="gameplay" src="img/putellas_gameplay_cropped.jpg" alt="">
+                </div>
+                <div>
+                    <img class="card" src="img/putellas_card.png" alt="">
+                    <div>
+                        <h2>Play Styles+</h2>
+                        <img src="img/first_touch.png" alt="">
+                        <span>FIRST TOUCH</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="gameplay" src="img/messi_in_game_cropped.jpg" alt="">
+                </div>
+                <div>
+                    <img class="card" src="img/messi_card.png" alt="">
+                    <div>
+                        <h2>Play Styles+</h2>
+                        <img src="img/technical.png" alt="">
+                        <span>TECHNICAL</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="content.js"></script>
     <script src="payment.js"></script>
