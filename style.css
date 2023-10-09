@@ -248,12 +248,12 @@ form input:focus{
     padding: 50px 0px;
     margin-bottom: 150px;
 }
-#evolution h1{
+.small_title{
     font-family: 'Dela Gothic One', cursive;
     font-size: 2.6rem;
     text-align: center;
 }
-#evolution p{
+.content_p{
     font-size: 1.7rem;
     text-align: center;
     padding: 0 50px;
@@ -283,7 +283,7 @@ form input:focus{
     opacity:0;
 }
 .players{
-    margin-top: 150px;
+    margin: 150px 0;
 }
 .players>div{
     display: flex;
@@ -299,10 +299,16 @@ form input:focus{
     width: 100%;
 }
 .card{
-    padding-top: 50px;
+    padding: 50px 100px 0 100px;
     width: 22%;
     display: block;
     margin: 0 auto;
+}
+.card:hover{
+    animation: card_flip 1s ease-in-out 0.2s forwards;
+}
+@keyframes card_flip {
+    100% {transform: rotatey(360deg);}
 }
 .players div div:nth-child(2) div{
     text-align: center;
@@ -331,5 +337,29 @@ form input:focus{
     width: 100%;
     height: 2px;
     background-color: rgb(51, 52, 52);
+}
+.women{
+    display: flex;
+    background-color: rgb(112, 244, 104);
 
+}
+.women div{
+    width: 50%;
+}
+.women div:nth-child(2){
+    padding-top: 50px;
+}
+.women img{
+    width: 75%;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+}
+.women h1{
+    margin: 0 150px;
+}
+.women p{
+    padding: 0 120px;
 }
