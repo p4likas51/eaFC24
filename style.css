@@ -60,14 +60,50 @@ h1, h2, h3, h4, h5, h6{
 .nav_third{
     width: 15%;
 }
-.main_nav div ul{
+.main_nav div>ul{
     text-align: center;
     padding: 0;
 }
-.main_nav div ul li{
+.main_nav div>ul>li{
     display: inline;
     padding: 9px 15px;
     margin: 0 25px;
+}
+.nav_dropdown{
+    display: inline-block;
+    position: relative;
+}
+.nav_dropdown > .nav_dropdown_content{
+    list-style-type: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: rgb(33, 34, 33);
+    border-radius: 7px;
+    border: 2px solid rgb(51, 52, 52);
+    transition: visibility .1s linear 0.2s
+}
+.nav_dropdown_content li{
+    display: block;
+    text-align: start;
+    margin-bottom: 10px;
+    padding: 9px;
+}
+.nav_dropdown_content li:last-child{
+    margin-bottom: 0;
+}
+.nav_dropdown:hover .nav_dropdown_content{
+    visibility: visible;
+}
+.hover_protection{
+    position: absolute;
+    left: 0px;
+    height: 40px;
+    width: 100%;
 }
 .main_nav div ul li:hover{
     background-color: rgb(49, 50, 49);
